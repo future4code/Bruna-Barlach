@@ -1,3 +1,4 @@
+
 body {
     background-color: thistle;
 }
@@ -8,6 +9,11 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
+    word-spacing: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
        
 }
 
@@ -19,6 +25,8 @@ body {
     padding: 15px;
     font-size: 20px;
     margin: 30px;
+    position: relative;
+    top: 100px;
 }
 
 #apresenta {
@@ -26,7 +34,10 @@ body {
     color: rebeccapurple;
     border: 4px solid magenta;
     margin: 30px;
-}
+    position: relative;
+    top: 100px;
+    text-align: center;
+    }
 
 .redes {
   border: 1px solid #ddd;
@@ -34,6 +45,7 @@ body {
   padding: 5px;
   width: 20px;
   background-color: white;
+  
   }
 
 #rodape1 {
@@ -43,6 +55,9 @@ body {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    position: relative;
+    top: 200px;
+    
 }
 
 a {
@@ -56,11 +71,18 @@ a:hover {
   }
 
 
+
 h2 {
     font-size: 40px;
     color: teal;
     font-family: sans-serif;
     text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: mediumvioletred;
+    font-family: fantasy;
 }
 
 .funcionarios1 {
@@ -109,6 +131,13 @@ ul {
     font-family: cursive;
 }
 
+#titulo5-tabela {
+    color: white;
+    background-color: greenyellow;
+    font-size: 30px;
+    font-family: cursive;
+}
+
 .tabela-row1 {
     background-color: palegoldenrod;
     text-align: center;
@@ -123,6 +152,18 @@ ul {
 
 .tabela-row3 {
     background-color: palevioletred;
+    text-align: center;
+    color: white;
+}
+
+.tabela-row5 {
+    background-color: paleturquoise;
+    text-align: center;
+    color: white;
+}
+
+.tabela-row4 {
+    background-color: plum;
     text-align: center;
     color: white;
 }
@@ -146,4 +187,49 @@ ul {
   width: 15%;
   padding: 10px;
   background-color: white;
+}
+
+#add-venda {
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+}
+
+.div-vendas {
+    widht: 50px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.botoes {
+    background-color: palevioletred;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    border-color: purple;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.botoes:hover {
+    background-color: palegreen;
+    cursor: pointer;
+}
+
+.form-add {
+    widht: 100px;
+    margin: auto;
+    padding-left: 550px;
+}
+
+#busca-venda {
+     text-align: center;
+     padding: 50px;
+    
 }
