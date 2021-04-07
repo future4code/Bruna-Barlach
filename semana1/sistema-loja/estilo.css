@@ -1,0 +1,149 @@
+body {
+    background-color: thistle;
+}
+
+.barra-superior {
+    background-color: white;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+       
+}
+
+#descrito {
+    background-color: mediumpurple;
+    color: paleturquoise;
+    border: 1px dotted magenta;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 20px;
+    margin: 30px;
+}
+
+#apresenta {
+    background-color: pink;
+    color: rebeccapurple;
+    border: 4px solid magenta;
+    margin: 30px;
+}
+
+.redes {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 20px;
+  background-color: white;
+  }
+
+#rodape1 {
+    display: block;
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: fantasy;
+
+}
+
+a:hover {
+    color: hotpink;
+  }
+
+
+h2 {
+    font-size: 40px;
+    color: teal;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.funcionarios1 {
+    color: purple;
+}
+
+.funcionarios2 {
+    color: royalblue;
+}
+
+
+ul {
+    list-style: square;
+    
+}
+
+.produtos {
+    width: 100px;
+}
+
+#titulo1-tabela {
+    color: white;
+    background-color: magenta;
+    font-size: 30px;
+    font-family:cursive;
+}
+
+#titulo2-tabela {
+    color: white;
+    background-color: blueviolet;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#titulo3-tabela {
+    color: white;
+    background-color: purple;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#titulo4-tabela {
+    color: white;
+    background-color: crimson;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.tabela-row1 {
+    background-color: palegoldenrod;
+    text-align: center;
+    color: white;
+}
+
+.tabela-row2 {
+    background-color: palegreen;
+    text-align: center;
+    color: white;
+}
+
+.tabela-row3 {
+    background-color: palevioletred;
+    text-align: center;
+    color: white;
+}
+
+#tabela-estoque {
+    margin: auto;
+  width: 50%;
+  border: 3px solid springgreen;
+  padding: 10px;
+}
+
+ul {
+    margin: auto;
+  width: 15%;
+  padding: 10px;
+  background-color: white;
+}
+
+#add-produto {
+    margin: auto;
+  width: 15%;
+  padding: 10px;
+  background-color: white;
+}
