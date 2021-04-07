@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Histórico de vendas</title>
+</head>
+<body>
+    
+    
+    <div class="barra-superior">
+        <h1>Loja de Unicórnios</h1>
+        <a href="index.html">Página_Inicial</a>
+        <a href="ctrl-estoque.html">Controle_de_Estoque</a>
+        <a href="venda.html">Vendas</a>
+        <a href="hist-venda.html">Histórico_de_vendas</a>
+        <a href="add-produto.html">Adicionar_Produto</a>
+        </div>
+
+        <h2>Histórico de vendas</h2>
+    <div id="tabela-estoque">
+    <table>
+        <tr>
+            <th id="titulo1-tabela">Horário</th>
+            <th id="titulo2-tabela">Funcionário</th>
+            <th id="titulo3-tabela">Produto</th>
+            <th id="titulo4-tabela">Valor total</th>
+            <th id="titulo5-tabela">Forma de pagamento</th>
+        </tr>
+
+        <tr>
+            <td class="tabela-row1"> 00:25:05 </td>
+            <td class="tabela-row2"> Maria Maravilhosa </td>
+            <td class="tabela-row3"> Uma linda carinha de unicórnio! </td>
+            <td class="tabela-row4"> Free! </td>
+            <td class="tabela-row5"> Amor </td>
+        </tr>
+
+        <tr>
+            <td class="tabela-row5"> 02:34:56 </td>
+            <td class="tabela-row4"> Joana Encantada </td>
+            <td class="tabela-row3"> Sabia que unicórnio gosta de sorvete?</td>
+            <td class="tabela-row2"> Free! </td>
+            <td class="tabela-row1"> Amor </td>
+        </tr>
+
+        <tr>
+            <td class="tabela-row1"> 03:25:06 </td>
+            <td class="tabela-row2"> Paula Púrpura </td>
+            <td class="tabela-row3"> Aqui você pode escolher mais um fofinho. </td>
+            <td class="tabela-row4"> Free! </td>
+            <td class="tabela-row5"> Amor </td>
+        </tr>
+
+        <tr>
+            <td class="tabela-row5"> 04:17:08 </td>
+            <td class="tabela-row4"> Jorge Escarlate </td>
+            <td class="tabela-row3"> Unicórnio cute </td>
+            <td class="tabela-row2"> Free! </td>
+            <td class="tabela-row1"> Amor </td>
+        </tr>
+        
+        <tr>
+            <td class="tabela-row1"> 05:43:29 </td>
+            <td class="tabela-row2"> Bel Brilhante </td>
+            <td class="tabela-row3"> Transforme-se em um unicórnio! </td>
+            <td class="tabela-row4"> Free! </td>
+            <td class="tabela-row5"> Amor </td>
+        </tr>
+    </table>
+    </div>
+
+<form action="submit" id="busca-venda">
+        <div>
+            <label for="data">Data da compra: </label>
+            <input type="date" id="data" name="data">
+                    
+            <button type="submit" class="botoes">Buscar</button>
+        </div>
+
+    </body>
+    </html>
