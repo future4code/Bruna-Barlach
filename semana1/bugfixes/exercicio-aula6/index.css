@@ -130,3 +130,8 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
+.imagem-tabela {
+    width: 50px;
+    height: auto;
+}
