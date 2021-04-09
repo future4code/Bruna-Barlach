@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: thistle;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(230, 224, 224);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: indigo;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;    
+}
+
+a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: rgba(233, 233, 233, 0.829);
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    height: 70px;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 30px;
+}
+
+footer {
+    background-color: hotpink;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#contato {
+    margin: auto;
+    width: 15%;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-color: purple;
+    border-top: 1px;
+}
+
+.botoes {
+    background-color: palevioletred;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    border-color: purple;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    }
+
+.botoes:hover {
+    background-color: white;
+    border-radius: 50px;
+    border: solid;
+    border-color: purple;
+    color: purple;
+    cursor: pointer;
+}
+
+#minha-foto {
+    width: 200px;
+    height: auto;
+}
+
+section {
+    display: inline-block;
+    background-color: rebeccapurple;
+    width: 50%;
+}
+
+ul {
+    color: white;
+    margin: 25px;
+}
+
+article {
+    display: inline-block;
+    background-color: purple;
+    left: 50%;
+    height: 500px;
+    width: 650px;
+    
+}
+
+#projetos {
+    color: black;
+}
+
+.img-projetos {
+    margin: 20px;
+    height: 200px;
+    width: auto;
+    border: blueviolet;
+    border-style: solid;
+}
+
+.img-projetos:hover {
+    border: white;
+    border-style: double;
+}
+
+#projeto-grande {
+    height: 250px;
+    }
+
+#projeto {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+}
