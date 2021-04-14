@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 300px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: mediumseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: mediumslateblue;
+    display: flex;
+    justify-content: center;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+
+h1 {
+    color: mintcream;
+}
+
+p {
+    color: mintcream;
+}
+
+h2 {
+    color: orangered;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+#busca {
+    border-radius: 25px;
+}
+
+video {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
