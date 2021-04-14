@@ -46,14 +46,18 @@ div {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 2fr 1fr;
     gap: 20px;
+    height: 100vh;
+    width: 100vw;
 }
 
-@media screen and (max-width: 420px)
+@media screen and (min-width: 320px) and (max-width: 420px)
 {
     #main-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100vh;
+        width: 100vw;
         
     }
     .white-block {
@@ -86,4 +90,47 @@ div {
         grid-column: 1;
     }
     
+}
+
+@media screen and (min-width: 421px) and (max-width: 800px)
+{
+    #main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 4fr;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .white-block {
+        display: none;
+    }
+
+    .black-block {
+        background-color: black;
+        color: white;
+        grid-column: span 1;
+    }
+    #first-block {
+        background-color: red;
+        grid-column: span 2;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        grid-column: span 1;
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        grid-column: span 1;
+    }
+    
+    .green-block {
+        background-color: green;
+        grid-column: span 2;
+    }
+    
+
+ }
 }
