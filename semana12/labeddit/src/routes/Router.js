@@ -5,12 +5,12 @@ import SignupPage from "../pages/SignupPage";
 import FeedPage from "../pages/FeedPage";
 import PostPage from "../pages/PostPage";
 import ErrorPage from "../pages/ErrorPage";
-
+import Header from "../components/Header/Header";
 
 const Router = () => {
     return (
       <BrowserRouter>
-        {/* <Header/> */}
+        <Header/>
         <Switch>
           <Route exact path="/login">
             <LoginPage />
@@ -20,7 +20,7 @@ const Router = () => {
             <FeedPage />
           </Route>
   
-          <Route exact path="/post">
+          <Route exact path="/post/:id">
             <PostPage />
           </Route>
 
