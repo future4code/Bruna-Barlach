@@ -1,17 +1,33 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import useForm from "../hooks/useForm";
-import { goToSignUp } from "../routes/coordinator";
+import { goToFeed, goToSignUp } from "../routes/coordinator";
+import axios from "axios"
+import {BASE_URL} from "../constants/urls"
+import useUnprotectedPage from "../hooks/useUnprotectedPage"
 
 const LoginPage = () => {
+  useUnprotectedPage()
+
   const {form, onChange, clear} = useForm({email: "", password: ""})
 
   const onSubmitForm = (event) => {
     event.preventDefault()
+    login()
   
   }
 
   const history = useHistory()
+
+  const login = () => {
+    axios.post(`${BASE_URL}/users/login`, form)
+    .then(((res)=>{
+      localStorage.setItem("token", res.data.token)
+      clear()
+      goToFeed(history)
+    }))
+    .catch((err)=>alert("Erro no login"))
+  }
 
   return (
     <>

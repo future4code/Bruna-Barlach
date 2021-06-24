@@ -1,5 +1,5 @@
 import React from "react";
-import { divHeader } from "./styled";
+import { DivHeader } from "./styled";
 import { goToFeed, goToLogin } from "../../routes/coordinator";
 import { useHistory } from "react-router-dom";
 
@@ -7,10 +7,10 @@ import { useHistory } from "react-router-dom";
 const Header = () => {
     const history = useHistory()
     return (
-        <divHeader>
+        <DivHeader>
             <button onClick={() => goToFeed(history)}>Feed</button>
             <button onClick={() => goToLogin(history)}>Login</button>
-        </divHeader>
+        </DivHeader>
     )
 }
 
