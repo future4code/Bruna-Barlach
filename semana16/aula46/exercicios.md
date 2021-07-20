@@ -27,3 +27,10 @@ WHERE name = "Fernanda Montenegro"
 b. DELETE FROM Actor 
 WHERE gender = "male" AND
 salary > 1000000;
+
+### Exercício 3
+a. SELECT MAX(salary) FROM Actor
+b. SELECT MIN(salary) FROM Actor WHERE gender = "female"
+c. SELECT COUNT(*) FROM Actor WHERE gender = "female"
+d. SELECT SUM(salary) FROM Actor
+
