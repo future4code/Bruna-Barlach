@@ -24,20 +24,63 @@ app.get("/index", async (req: Request, res: Response) => {
     res.status(200).send(result)
 });
 
-app.get("/show", (req: Request, res: Response) => {
-    res.status(200).send('data')
+app.get("/show/:id", async (req: Request, res: Response) => {
+    const id = req.params.id;
+    let walk = await connection('DogWalking').where('id', id);
+    res.status(200).send(walk)
 });
 
-app.post("/create", (req: Request, res: Response) => {
-    res.status(200).send('data')
+app.post("/create", async (req: Request, res: Response) => {
+    let preco: Number = 0
+    let pets: number = Number(req.body.pets)
+    let tipo_passeio: String = req.body.tipo_passeio
+    if(tipo_passeio == "longo"){
+        preco = 35
+        if(pets > 1){
+            preco = 20 * (pets - 1)
+        }
+    } else if(tipo_passeio == "curto"){
+        preco = 25
+        if(pets > 1){
+            preco = 15 * (pets - 1)
+        }
+    }
+    await connection('DogWalking').insert({
+        "id": req.body.id,
+        "data": new Date(req.body.data),
+        "latitude": req.body.latitude,
+        "longitude": req.body.longitude,
+        "pets": pets,
+        "preco": preco, 
+        "status": "AGENDADO"
+    });
+    res.status(200).send('ok')
 });
 
-app.post("/start_walk", (req: Request, res: Response) => {
-    res.status(200).send('data')
+app.post("/start_walk/:id", async (req: Request, res: Response) => {
+    await connection('DogWalking')
+        .where('id', req.params.id)
+        .update({
+            'horario_inicio': Date.now.toString(),
+            'status': 'ANDANDO'
+        });
+    res.status(200).send('ok')
 });
 
-app.post("/finish_walk", (req: Request, res: Response) => {
-    res.status(200).send('data')
+app.post("/finish_walk/:id", async (req: Request, res: Response) => {
+    let inicio: Date = await connection('DogWalking')
+        .where('id', req.params.id)
+        .select('horario_inicio');
+    let fim = new Date()
+    await connection('DogWalking')
+        .where('id', req.params.id)
+        .update({
+            'horario_fim': fim,
+            'duracao': fim.getTime() - inicio.getTime(),
+            'status': 'TERMINADO'
+        })
+
+    res.status(200).send('ok')
 });
 
 
