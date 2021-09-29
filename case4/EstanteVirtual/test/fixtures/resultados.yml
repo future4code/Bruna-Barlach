@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  competicao: one
+  atleta: MyString
+  value: MyString
+  unidade: MyString
+
+two:
+  competicao: two
+  atleta: MyString
+  value: MyString
+  unidade: MyString
